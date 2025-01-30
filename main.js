@@ -3,7 +3,7 @@ let lastTime = Date.now();
 
 let playerOne = {
     id: 1,
-    time: 60*5,
+    time: 60 * 5,
     increment: 3,
     btn: document.getElementById("player1"),
     timer: document.getElementById('timer1'),
@@ -12,7 +12,7 @@ let playerOne = {
 
 let playerTwo = {
     id: 2,
-    time: 60*5,
+    time: 60 * 5,
     increment: 3,
     btn: document.getElementById("player2"),
     timer: document.getElementById('timer2'),
@@ -29,7 +29,7 @@ function stopGo(playerObj, oponentObj) {
     let currentTime = Date.now();
     let elapsedTime = (currentTime - lastTime) / 1000; // tiempo transcurrido en segundos
     lastTime = currentTime;
-    
+
     if (oponentObj.going == 0) {
         oponentObj.going = 1;
         oponentObj.time -= elapsedTime; // Actualizar el tiempo del jugador
@@ -38,11 +38,11 @@ function stopGo(playerObj, oponentObj) {
             playerObj.time += playerObj.increment;
             playerObj.going = 0;
         }
-        oponentObj.btn.innerHTML = "Your Turn!";
-        playerObj.btn.innerHTML = "Player " + playerObj.id;
-    } else if (playerObj.btn.innerHTML == "Your Turn!") { // ?¿?¿?¿?
+        oponentObj.btn.innerHTML = "Tu Turno!";
+        playerObj.btn.innerHTML = "Jugador " + playerObj.id;
+    } else if (playerObj.btn.innerHTML == "Tu Turno!") { // ?¿?¿?¿?
         playerObj.going = 0;
-        playerObj.btn.innerHTML = "Player " + playerObj.id;
+        playerObj.btn.innerHTML = "Jugador " + playerObj.id;
         oponentObj.going = 1;
     }
 }
@@ -53,7 +53,7 @@ function resumeTimer(player) {
             let currentTime = Date.now();
             let elapsedTime = (currentTime - lastTime) / 1000; // tiempo transcurrido en segundos
             lastTime = currentTime;
-            
+
             player.time -= elapsedTime; // restar el tiempo transcurrido
             player.timer.innerHTML = displayTime(player);
             resumeTimer(player);
@@ -65,7 +65,7 @@ function resumeTimer(player) {
 function displayTime(player) {
     let mins = Math.floor(player.time / 60);
     let secs = Math.floor(player.time % 60);
-    
+
     return (secs >= 10) ? mins + ':' + secs : mins + ':0' + secs;
 }
 
