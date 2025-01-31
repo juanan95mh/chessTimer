@@ -8,7 +8,19 @@ body {
     color: #5c2490;
 }
 
-#player-1,
+#player-1 {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #207008;
+    background: #6e2490;
+    margin-top: 5px;
+}
+
 #player-2 {
     width: 50%;
     height: 100vh;
@@ -17,51 +29,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#player1,
-#player2 {
-    background: #904B24;
-    color: white;
+    background: #207008;
+    color: #6e2490;
     margin-top: 5px;
-    padding: 20px 40px;
-    font-size: 7em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 #player1 {
-    background: #904B24;
-    color: white;
+    margin-top: 5px;
+    padding: 20px 40px;
+    font-size: 5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #b550e4;
+    color: #207008;
     margin-top: 5px;
 }
+
+#player2 {
+    margin-top: 5px;
+    padding: 20px 40px;
+    font-size: 5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    background: #44c71d;
+    color: #9160a8;
+    margin-top: 5px;
+}
+
 
 #timer1 {
     margin: 1em auto;
-    font-size: 7em;
+    font-size: 5em;
     padding: 1em;
     width: 30%;
-}
-
-/*player box*/
-#player-2 {
-    background: #904B24;
-    ;
-}
-
-/*player btn */
-#player2 {
-    background: #FEF0B2;
-    color: #904B24;
-    margin-top: 5px;
+    color: #207008;
 }
 
 /*player timer text*/
 #timer2 {
     margin: 1em auto;
-    font-size: 7em;
+    font-size: 5em;
     padding: 1em;
     width: 30%;
-    color: white;
+    color: #5c2490;
 }
