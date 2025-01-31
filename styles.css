@@ -34,31 +34,31 @@ body {
     margin-top: 5px;
 }
 
-#player1 {
+#player1, #player2 {
     margin-top: 5px;
-    padding: 20px 40px;
-    font-size: 5em;
+    padding: 5vh 10vw;
+    font-size: 5vw;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#player1 {
     background: #b550e4;
     color: #207008;
-    margin-top: 5px;
 }
 
 #player2 {
-    margin-top: 5px;
-    padding: 20px 40px;
-    font-size: 5em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 5px;
     background: #44c71d;
     color: #9160a8;
-    margin-top: 5px;
 }
 
+@media (max-width: 600px) {
+    #player1, #player2 {
+        padding: 3vh 5vw;
+        font-size: 4vw;
+    }
+}
 
 #timer1 {
     margin: 1em auto;
