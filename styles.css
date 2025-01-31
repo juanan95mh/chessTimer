@@ -1,6 +1,12 @@
 body {
-    background: #ffffff;
-    color: #7e4ba0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #207008;
+    color: #6e2490;
 }
 
 #nav {
@@ -34,13 +40,15 @@ body {
     margin-top: 5px;
 }
 
-#player1, #player2 {
-    margin-top: 5px;
-    padding: 5vh 10vw;
-    font-size: 5vw;
+#player1, #player2, #timer1, #timer2 {
+    margin: 5px;
+    padding: 2vh 4vw;
+    font-size: 4vw;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    max-width: 90vw;
+    box-sizing: border-box;
 }
 
 #player1 {
@@ -54,25 +62,13 @@ body {
 }
 
 @media (max-width: 600px) {
-    #player1, #player2 {
-        padding: 3vh 5vw;
-        font-size: 4vw;
+    #player1, #player2, #timer1, #timer2 {
+        padding: 2vh 4vw;
+        font-size: 2vw;
     }
 }
 
-#timer1 {
-    margin: 1em auto;
-    font-size: 5em;
-    padding: 1em;
-    width: 30%;
-    color: #207008;
-}
-
-/*player timer text*/
-#timer2 {
-    margin: 1em auto;
-    font-size: 5em;
-    padding: 1em;
-    width: 30%;
-    color: #5c2490;
+#timer1, #timer2 {
+    background: #ffffff;
+    color: #000000;
 }
